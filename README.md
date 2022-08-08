@@ -1,2 +1,2 @@
-# [Contador](https://https://todo-g.netlify.app)
+# [Contador](https://g-contador.netlify.app)
 Projeto proposto como um dos desafios no Bootcamp Decola-Tech.
