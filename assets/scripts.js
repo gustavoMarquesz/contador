@@ -1,6 +1,6 @@
 
-var numeroAtual = 0;
-var numeroHtml = document.getElementById("valor");
+let numeroAtual = 0;
+let numeroHtml = document.getElementById("valor");
 
 function acrescentar(){
     numeroAtual = numeroAtual+1;
@@ -16,9 +16,9 @@ function diminuir(){
     numeroAtual = numeroAtual-1;
     numeroHtml.innerHTML = numeroAtual;
 
-    if (numeroAtual <= 2){
+    if (numeroAtual < 0){
         numeroAtual = numeroAtual +1;
+        numeroHtml.innerHTML = numeroAtual;
         alert("Sorry! :( sem números negativos por aqui.");
-
     }
 }

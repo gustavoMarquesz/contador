@@ -1,30 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Nunito:wght@300&family=Roboto+Mono:ital,wght@0,500;1,100;1,200;1,400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,200&display=swap');
 *{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
 
 body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background-image: radial-gradient(circle at 50% 50%, #3bc7c7 0, #3bb1b8 12.5%, #3d98a2 25%, #3d7d88 37.5%, #3b5f68 50%, #344348 62.5%, #2b2c2c 75%, #201915 87.5%, #180500 100%);
+    color: #fff;
+    font-family: 'Kanit', sans-serif;
+    font-size: 30px;
+    background: rgb(54,14,14);
+    background: radial-gradient(circle, rgba(54,14,14,0.742734593837535) 4%, rgba(5,65,136,1) 100%);
 }
 
+.title{
+    display: flex;
+    justify-content: center;
+    padding: 250px;
+}
+.teste{
+    animation: animationTech 4s 1s infinite;
+}
+@keyframes animationTech{
+    from{color: #fff;}
+    to{color:  #41b883;}
+}
 .contador{
     display: flex;
-    align-items: center;
     justify-content: center;
-    background-image:radial-gradient(circle at -19.64% 62.28%, #e6d1d6 0, #d8cacd 8.33%, #c8c3c3 16.67%, #b6bbbb 25%, #a2b2b4 33.33%, #8ba8ad 41.67%, #739da7 50%, #5a92a2 58.33%, #40879f 66.67%, #237d9d 75%, #00739b 83.33%, #006a9a 91.67%, #006299 100%);
+    align-items: center;
     gap: 20px;
+    font-size: 70px;
+    background-color: transparent;
     width: 400px;
-    height: 200px;
-    border-radius: 30px;
-    flex-direction: column;
-    font-family: 'Open Sans', sans-serif;
+    max-height: 150px;
+    margin: auto;
+    transition: 1s;
+    border-radius: 15px;
+    color: #fff;
+    bottom: 150px;
+    position: relative;
+}
+
+.contador button{
+    width: 100px;
+    height: 50px;
+}
+
+.contador:hover{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+@media screen and (max-width: 375px){
+    .title{
+        font-size: 25px;
+        justify-content: flex-start;
+        padding: 150px;
+        right: 70px;
+        position: relative;
+    }
+
+    .contador{
+        font-size: 20px;
+        width: 130px;
+        height: 100px;
+    }
+    .contador:hover{
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
 }
 
 
